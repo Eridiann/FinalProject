@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RootRPGProject.Pages.EditPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="New Equipment">
+                        <EntryCell x:Name="name" Label="Name" HorizontalTextAlignment="Center"></EntryCell>
+                        <EntryCell x:Name="description" Label="Description" HorizontalTextAlignment="Center"></EntryCell>
+                        <EntryCell x:Name="load" Label="Load" HorizontalTextAlignment="Center" Keyboard="Numeric"></EntryCell>
+                        <EntryCell x:Name="value" Label="Value" HorizontalTextAlignment="Center" Keyboard="Numeric"></EntryCell>
+                        <EntryCell x:Name="range" Label="Range" HorizontalTextAlignment="Center"></EntryCell>
+                        <EntryCell x:Name="maxWear" Label="Max Wear" HorizontalTextAlignment="Center" Keyboard="Numeric"></EntryCell>
+                        <EntryCell x:Name="wear" Label="Wear" HorizontalTextAlignment="Center" Keyboard="Numeric"></EntryCell>
+                        <EntryCell x:Name="harmType" Label="Harm Type" HorizontalTextAlignment="Center"></EntryCell>
+                        <EntryCell x:Name="harmValue" Label="Harm" HorizontalTextAlignment="Center" Keyboard="Numeric"></EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Update Equipment" x:Name="btnUpdate"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

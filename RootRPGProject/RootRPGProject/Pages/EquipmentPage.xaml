@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RootRPGProject.Models"
+             x:Class="RootRPGProject.Pages.EquipmentPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnAddEquipment" Text="Add Equipment"></Button>
+            <Image Source="https://gamecows.com/wp-content/uploads/2020/10/Root-Board-Game-Featured.jpg"/>
+            <TableView Margin="10" Intent="Settings">
+                <TableRoot>
+                    <TableSection x:Name="equipmentList" Title="Equipment">
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

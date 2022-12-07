@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RootRPGProject.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#F9B000" Padding="24" CornerRadius="0">
+            <Label Text="Root RPG Equipment" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" FontAttributes="Bold"/>
+        </Frame>
+        <Image Source="https://gnomestew.com/wp-content/uploads/2019/09/ad2be22e898bc90c27a7677f907b4259_original.jpg"/>
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <EntryCell x:Name="cellUsername" Label="Username"></EntryCell>
+                    <EntryCell x:Name="cellPassword" Label="Password"></EntryCell>
+                    <EntryCell x:Name="cellEmail" Label="Email" Keyboard="Email"></EntryCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button x:Name="btnLogin" Text="Login" Padding="30,10,30,10"></Button>
+        <Button x:Name="btnRegister" Text="Sign up" Padding="30,10,30,10"></Button>
+    </StackLayout>
+
+</ContentPage>

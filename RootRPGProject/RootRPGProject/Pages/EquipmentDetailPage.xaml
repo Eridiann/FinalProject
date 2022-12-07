@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RootRPGProject.Pages.EquipmentDetailPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="name"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               FontSize="36"
+               Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
+        <Label x:Name="harm"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               Grid.Row="2"
+               Grid.Column="0" />
+        <Label x:Name="load"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               Grid.Row="1" />
+        <Label x:Name="wear"
+               VerticalOptions="StartAndExpand"
+               HorizontalOptions="CenterAndExpand"
+               Grid.Row="1"
+               Grid.Column="2" />
+        <Label x:Name="description"
+               VerticalOptions="StartAndExpand"
+               Padding="30,10,30,10"
+               Grid.Row="3"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
+        <Label x:Name="tags"
+               VerticalOptions="StartAndExpand"
+               Padding="30,10,30,10"
+               Grid.Row="4"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
+        <Label x:Name="weaponSkills"
+               VerticalOptions="StartAndExpand"
+               Padding="30,10,30,10"
+               Grid.Row="5"
+               Grid.Column="0"
+               Grid.ColumnSpan="3" />
+        <Button x:Name="Update"
+                Text="Update"
+                Grid.Row="6"
+                Grid.Column="0" />
+        <Button x:Name="Delete"
+                Text="Delete"
+                Grid.Row="6"
+                Grid.Column="2" />
+    </Grid>
+</ContentPage>
