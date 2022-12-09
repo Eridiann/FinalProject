@@ -27,6 +27,7 @@ namespace RootRPGAPI.Controllers
 			TagList = await context.Tags.ToListAsync();
 			return TagList;
 		}
+
 		[HttpPut]
 		public async Task<ActionResult<bool>> PutTag(Tag tag)
 		{
